@@ -1,0 +1,39 @@
+.form-block-item {
+   padding: 16px 0px;
+   position: relative;
+   display: flex;
+   justify-content: center;
+}
+.form-block-input {
+   position: absolute;
+   z-index: -1;
+   opacity: 0;
+}
+.form-block-input + label {
+   display: inline-flex;
+   align-items: center;
+   user-select: none;
+   color: #565656;
+   font-size: 14px;
+}
+.form-block-input + label span {
+   width: 214px;
+}
+.form-block-input + label::before {
+   content: " ";
+   display: inline-block;
+   width: 40px;
+   height: 40px;
+   flex-shrink: 0;
+   flex-grow: 0;
+   border: 2px solid #000;
+
+   margin-right: -10px;
+   cursor: pointer;
+}
+.form-block-input:checked + label::before {
+   background-image: url("./Vector.png");
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 50% 50%;
+}

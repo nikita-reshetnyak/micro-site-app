@@ -1,0 +1,33 @@
+.banner {
+   position: absolute;
+   padding: 20px 10px;
+   bottom: 143px;
+   right: 72px;
+   width: 251px;
+   background-color: #86d3f4;
+   &__title {
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+   }
+   &__icon {
+      margin-bottom: 20px;
+   }
+   &__subtext {
+      width: 138px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+   }
+   &__button {
+      width: 156px;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 500;
+      padding: 16.5px 0px;
+      &:hover {
+         background-color: #000;
+         color: #fff;
+      }
+   }
+}
